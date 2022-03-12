@@ -1,0 +1,8 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wlissisrds/crudNestJs.git",
+  "author": "Wlisses Ribeiro <69227825+wlissisrds@users.noreply.github.com>",
+  "license": "MIT"
+}
