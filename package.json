@@ -4,5 +4,15 @@
   "main": "index.js",
   "repository": "https://github.com/wlissisrds/crudNestJs.git",
   "author": "Wlisses Ribeiro <69227825+wlissisrds@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "knex": "^1.0.3"
+  },
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
