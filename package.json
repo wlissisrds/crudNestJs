@@ -10,7 +10,7 @@
     "knex": "^1.0.3"
   },
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/server.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
