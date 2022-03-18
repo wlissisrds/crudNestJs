@@ -1,9 +1,11 @@
 //Arquivo de rotas de acesso ao db
 const express = require('express');
 
-const routs  = express.Router()
+const routes  = express.Router()
 const UserController = require('./controllers/UserController')
 
-routs.get("/users", UserController['index']);
+routes.get("/users", UserController['index']);
+routes.post("/users", UserController['create']);
 
-module.exports = routs;
+
+module.exports = routes;
