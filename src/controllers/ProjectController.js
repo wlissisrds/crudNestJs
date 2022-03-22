@@ -4,9 +4,11 @@ const knex = require('../database');
 module.exports = {
     async index(req, res, next){
         try {
-            const {user_id} = req.query;
+            const {user_id, page = 1} = req.query;
             
-            const query = knex('projects');
+            const query = knex('projects')
+            .limit(5) //limete de projetos por pagina
+            .offset((page - 1) * 5) //deslocamento da pagina
 
             if(user_id) {
                 query
