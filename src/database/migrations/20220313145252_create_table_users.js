@@ -1,10 +1,12 @@
+const {onUpdateTigger} = require('../../../knexfile')
+
 /**
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
 
 //criar tabela
-exports.up = function(knex) {
+exports.up = async function(knex) {
     return knex.schema.createTable('users', function(table){
         table.increments('id')
         table.text('username').unique().notNullable()
@@ -21,6 +23,6 @@ exports.up = function(knex) {
  */
 
 //deletar tabela
-exports.down = function(knex) {
+exports.down = async function(knex) {
     return knex.schema.dropTable('users')
 };
